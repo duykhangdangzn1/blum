@@ -17,19 +17,11 @@ import axios from "axios"; // Import axios for HTTP requests
 const VERSION = "v0.1.7";
 
 // Hidden banner text encoded in Base64 (GN SCRIPT ZONE)
-const encodedBanner = "R04gU0NSSVBUIFpPTkU=";
-const authorText = "QXV0aG9yIC0gTmFpbUdhemlUIFRHIEBCTFVNU0NSSVBUUyBUZWxlZ3JhbSAtIGh0dHBzOi8vdC5tZS9HTlNDUklQVFpPTkUKWW91dHViZSAtIGh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL0BHeWFhbmlOYWlt"; // Base64 for the author information
-
 // Function to decode and display the hidden banner
 const displayHiddenBanner = () => {
-    const decodedBanner = Buffer.from(encodedBanner, "base64").toString("utf8");
-    const decodedMessage = Buffer.from(authorText, "base64").toString("utf8");
-
-    // Display the banner title in larger format
-    console.log(colors.green.bold(`          ${decodedBanner}          `)); // Add spaces around the title
-
     // Center each line correctly
     const indentation = "           "; // Indentation for better centering
+    console.log(colors.red.bold(`${indentation} Khang Dang Blum`));
     console.log(colors.red.bold(`${indentation}Author - @Davidoiakw`));
     console.log(colors.red.bold(`${indentation}Telegram - https://t.me/@Davidoiakw`));
     console.log(colors.red.bold(`${indentation}Telegram Channel - https://t.me/sharefree11`));
